@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Nucleus | Startup Landing Page</title>
+
+  <!--SEO Meta Tags-->
+  <meta name="description" content="Nucleus Multi-Purpose Technology Template" />
+  <meta name="keywords" content="multipurpose, technology, business, corporate, hosting, web, startup, app showcase, mobile, blog, portfolio, landing, shortcodes, html5, css3, jquery, js, gallery, slider, touch, creative" />
+  <meta name="author" content="8Guild" />
+
+  <!--Mobile Specific Meta Tag-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- All Theme Styles including Bootstrap, FontAwesome, etc. compiled from styles.scss-->
+  <link href="css/styles.min.css" rel="stylesheet" media="screen">
+
+  <!--Modernizr / Detectizr-->
+  <script src="js/vendor/modernizr.custom.js"></script>
+  <script src="js/vendor/detectizr.min.js"></script>
+</head>
+
+<!-- Body -->
+<!-- "is-preloader preloading" is a helper classes if preloader is enabled. -->
+<!-- Adding/Removing class ".parallax" is enabling/disabling background parallax effect on elements with background images and attributes data-stellar-background-ratio applied to them. Make sure you also added/removed link to stellar.js script before </body>. -->
+<body class="is-preloader preloading parallax">
+  
+  <!-- Preloader -->
+  <!-- 
+      Data API:
+      data-spinner - Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
+      data-screenbg - Screen background color. Hex, RGB or RGBA colors
+   -->
+  <div id="preloader" data-spinner="spinner1" data-screenbg="#fff"></div>
+
+  <!-- Page Wrapper -->
+  <div class="page-wrapper">
+
+    <!-- Social Bar -->
+    <!-- Change modifier class to ".bar-fixed-left" to position social bar on the left side of the page. -->
+    <div class="social-bar bar-fixed-right">
+      <a href="#" class="sb-skype">
+        <i class="fa fa-skype"></i>
+      </a>
+      <a href="#" class="sb-facebook">
+        <i class="fa fa-facebook"></i>
+      </a>
+      <a href="#" class="sb-twitter">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </div><!-- .social-bar -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <button type="button" class="close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div class="modal-content text-center">
+          <h4>Login With Social Account</h4>
+          <div class="space-bottom-2x">
+            <a href="#" class="btn google-login waves-effect waves-light">Google<i class="fa fa-google"></i></a>
+            <a href="#" class="btn twitter-login waves-effect waves-light">Twitter<i class="fa fa-twitter"></i></a>
+            <a href="#" class="btn facebook-login waves-effect waves-light">Facebook<i class="fa fa-facebook"></i></a>
+          </div>
+          <h4>Or by Email</h4>
+          <form method="post">
+            <input type="email" class="form-control" placeholder="Email" required>
+            <input type="password" class="form-control" placeholder="Password" required>
+            <div class="form-group">
+              <button type="submit" class="btn login-btn btn-default waves-effect waves-light">Login into your account<i class="icon-head"></i></button>
+            </div>
+            <div class="text-left">
+              <span class="text-sm text-semibold">New to Nucleus? <a href="#">Sign Up</a></span>
+            </div>
+          </form><!-- <form> -->
+        </div><!-- .modal-content -->
+      </div><!-- .modal-dialog -->
+    </div><!-- .modal.fade -->
+
+    <!-- Navbar -->
+    <!-- Add class ".navbar-sticky" to make navbar stuck when it hits the top of the page. Another modifier class is: "navbar-fullwidth" to stretch navbar and make it occupy 100% of the page width. The screen width at which navbar collapses can be controlled through the variable "$nav-collapse" in sass/variables.scss -->
+    <header class="navbar navbar-sticky navbar-fullwidth">
+      
+      <!-- Toolbar -->
+      <div class="topbar">
+        <div class="container">
+          <a href="index.html" class="site-logo">
+            <img src="img/logo.png" alt="Nucleus">
+          </a><!-- .site-logo -->
+
+          <!-- Mobile Menu Toggle -->
+          <div class="nav-toggle"><span></span></div>
+
+          <div class="toolbar">
+            <a href="#" class="text-sm" data-toggle="modal" data-target="#loginModal">Sign up</a>
+            <a href="#" class="btn btn-sm btn-default btn-icon-right waves-effect waves-light" data-toggle="modal" data-target="#loginModal">Log In <i class="icon-head"></i></a>
+            <!-- <a href="shopping-cart.html" class="cart-btn"><i class="icon-bag"></i></a> -->
+            <div class="search-btn">
+              <i class="icon-search"></i>
+              <form method="post" class="search-box">
+                <input type="text" class="form-control input-sm" placeholder="Search">
+                <button type="submit"><i class="icon-search"></i></button>
+              </form>
+            </div><!-- .search-btn -->
+          </div><!-- .toolbar -->
+        </div><!-- .container -->
+      </div><!-- .topbar -->
+
+      <!-- Main Navigation -->
+      <div class="container">
+        <nav class="main-navigation">
+          <ul class="menu">
+            <li class="current-menu-item menu-item-has-children">
+              <a href="#">Home</a>
+              <div class="mega-menu">
+                <ul>
+                  <li><a href="home-hosting.html">Hosting &amp; Cloud Services</a></li>
+                  <li><a href="home-app-showcase.html">App Showcase Landing</a></li>
+                  <li><a href="home-conference.html">Conference &amp; Meetings</a></li>
+                  <li class="current-menu-item"><a href="home-startup.html">Startup Landing Page</a></li>
+                  <li><a href="home-shop.html">Shop Homepage</a></li>
+                  <li><a href="home-product-promo.html">Product Promo Page</a></li>
+                  <li><a href="home-seo.html">SEO Services Landing</a></li>
+                </ul>
+                <div class="content">
+                  <img src="img/menu-banner.png" alt="Image">
+                </div>
+              </div>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">Features</a>
+              <ul class="sub-menu"> 
+                <li><a href="features.html">Features Page</a></li>
+                <li><a href="tour-scale.html">App Tour Slider Scale</a></li>
+                <li><a href="tour-rotate.html">App Tour Slider Rotate</a></li>
+                <li><a href="tour-gallery.html">App Tour Slider Gallery</a></li>
+                <li><a href="tour-opacity.html">App Tour Slider Opacity</a></li>
+                <li><a href="tour-parallax.html">App Tour Slider Parallax</a></li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">Help</a>
+              <ul class="sub-menu"> 
+                <li><a href="help-general.html">Help Center General</a></li>
+                <li><a href="help-topic.html">Help Center Topic</a></li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">Blog</a>
+              <ul class="sub-menu"> 
+                <li><a href="blog-no-sidebar.html">Blog No Sidebar</a></li>
+                <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
+                <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
+                <li><a href="post-no-sidebar.html">Single Post No Sidebar</a></li>
+                <li><a href="post-right-sidebar.html">Single Post Right Sidebar</a></li>
+                <li><a href="post-left-sidebar.html">Single Post Left Sidebar</a></li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">Portfolio</a>
+              <ul class="sub-menu">
+                <li><a href="portfolio-standard.html">Standard Grid</a></li>
+                <li><a href="portfolio-grid-gap.html">Grid With Gap</a></li>
+                <li><a href="portfolio-grid-no-gap.html">Grid No Gap</a></li>
+                
+              </ul>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">Shop</a>
+              <ul class="sub-menu"> 
+                <li><a href="shop-catalog.html">Shop Catalog</a></li>
+                <li><a href="shop-single.html">Single Product</a></li>
+                <li><a href="shopping-cart.html">Shopping Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">Pages</a>
+              <ul class="sub-menu"> 
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="press-kit.html">Press Kit</a></li>
+                <li><a href="404.html">404</a></li>
+                <li><a href="elements.html">Elements</a></li>
+              </ul>
+            </li>
+          </ul><!-- .menu -->
+        </nav><!-- .main-navigation -->
+      </div><!-- .container -->
+      <div class="social-bar mobile-socials">
+        <a href="#" class="sb-skype">
+          <i class="fa fa-skype"></i>
+        </a>
+        <a href="#" class="sb-facebook">
+          <i class="fa fa-facebook"></i>
+        </a>
+        <a href="#" class="sb-twitter">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </div>
+    </header><!-- .navbar -->
+
+    <!-- Intro Section -->
+    <!-- Fullwidth section has bunch of modifier classes to alter its appearance: ".border-top, .border-bottom, .arrow-top, .arrow-bottom, .bg-gray, .bg-default, .bg-primary, .bg-parallax". They can be used separately or alltogether. -->
+    <section class="fw-section bg-parallax padding-top-3x padding-bottom-2x text-center" style="background-image: url(img/home/startup-bg01.jpg);" data-stellar-background-ratio="0.65">
+      <div class="overlay" style="opacity: .75;"></div>
+      <div class="container padding-top-3x padding-bottom-3x text-light">
+        <h1>Startup Landing Page For Your Product</h1>
+        <h4 class="text-normal">Nucleus Phone app that connects you to experts to help find you what you want, when you want.</h4>
+        <div class="video-popup-btn small-btn padding-top-2x padding-bottom">
+          <a href="https://vimeo.com/33984473" class="play-btn waves-effect waves-light"><i class="icon-play"></i></a>
+        </div>
+        <div class="row padding-bottom">
+          <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+            <div class="row">
+              <div class="col-sm-6 padding-bottom">
+                <img src="img/home/kickstarter.png" class="block-center space-bottom-2x" alt="Kickstarter">
+                <a href="#" class="btn btn-kickstarter btn-block waves-effect waves-light">Back This Project on Kickstarter</a>
+              </div>
+              <div class="col-sm-6 padding-bottom">
+                <img src="img/home/indie.png" class="block-center space-bottom-2x" alt="IndieGoGo">
+                <a href="#" class="btn btn-indie btn-block waves-effect waves-light">Back This Project on IndieGoGo</a>
+              </div>
+            </div>
+          </div>
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </section><!-- .fw-section -->
+
+    <!-- Logo Carousel -->
+    <section class="fw-section border-bottom padding-top-3x padding-bottom-3x">
+      <div class="container">
+        <h2 class="text-sm text-semibold text-gray text-uppercase text-center">Featured on</h2>
+        <!-- Data API:
+          data-loop="true/false" enable/disable looping
+          data-autoplay="true/false" enable/disable carousel autoplay
+          data-interval="3000" autoplay interval timeout in miliseconds 
+          Simply add necessary data attribute to the ".logo-carousel" with appropriate value to adjust carousel functionality.
+         -->
+         <div class="logo-carousel" data-loop="true" data-autoplay="true" data-interval="4000">
+           <div class="inner">
+             <a href="#"><img src="img/logos/01.jpg" alt="Logo"></a>
+             <a href="#"><img src="img/logos/02.jpg" alt="Logo"></a>
+             <a href="#"><img src="img/logos/03.jpg" alt="Logo"></a>
+             <a href="#"><img src="img/logos/04.jpg" alt="Logo"></a>
+             <a href="#"><img src="img/logos/05.jpg" alt="Logo"></a>
+             <a href="#"><img src="img/logos/06.jpg" alt="Logo"></a>
+           </div>
+         </div><!-- .logo-carousel -->
+      </div><!-- .container -->
+    </section><!-- .fw-section.border-bottom -->
+
+    <!-- Features -->
+    <section class="container padding-top-3x padding-bottom-3x">
+      <h2 class="block-title text-center scrollReveal sr-bottom">
+        Core Start Up Features
+        <small>A friendly interface to control all of your virtual servers. </small>
+      </h2>
+      <div class="row padding-top">
+        <div class="col-md-4 scrollReveal sr-scaleUp sr-ease-in-out-back">
+          <div class="box-with-icon bwi-horizontal">
+            <div class="bwi-inner">
+              <div class="bwi-icon">
+                <img src="img/features/14.png" alt="Feature">
+              </div>
+              <div class="bwi-content">
+                <h3 class="bwi-title">Hardware Acceleration</h3>
+                <p class="bwi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod mudo ipsum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 scrollReveal sr-scaleUp sr-delay-1 sr-ease-in-out-back">
+          <div class="box-with-icon bwi-horizontal">
+            <div class="bwi-inner">
+              <div class="bwi-icon">
+                <img src="img/features/15.png" alt="Feature">
+              </div>
+              <div class="bwi-content">
+                <h3 class="bwi-title">Out of Box</h3>
+                <p class="bwi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod mudo ipsum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 scrollReveal sr-scaleUp sr-delay-2 sr-ease-in-out-back">
+          <div class="box-with-icon bwi-horizontal">
+            <div class="bwi-inner">
+              <div class="bwi-icon">
+                <img src="img/features/16.png" alt="Feature">
+              </div>
+              <div class="bwi-content">
+                <h3 class="bwi-title">Easily Tunable</h3>
+                <p class="bwi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod mudo ipsum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- .row -->
+    </section><!-- .container -->
+
+    <!-- Text + Image -->
+    <section class="fw-section bg-gray border-top border-bottom padding-top-3x padding-bottom-3x">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 tablet-center mobile-center scrollReveal sr-left">
+            <div class="padding-top-2x hidden-sm hidden-xs"></div>
+            <h4>Interface Fits Your tablet</h4>
+            <p class="text-lg text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo laborum nostrum odit eos cumque enim animi molestiae facere eaque explicabo ipsa quis sequi adipisci provident dolor temporibus, modi obcaecati. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+            <a href="#" class="btn btn-primary btn-icon-right waves-effect waves-light">
+              See Documentation
+              <i class="icon-arrow-right"></i>
+            </a>
+          </div>
+          <div class="col-md-7 scrollReveal sr-right">
+            <div class="padding-top-2x visible-sm visible-xs"></div>
+            <img src="img/home/tablet.png" class="block-center" alt="Tablet">
+          </div>
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </section><!-- .fw-section.bg-gray.border-top.border-bottom -->
+
+    <!-- Text + Image -->
+    <section class="container padding-top-3x padding-bottom-3x">
+      <div class="row">
+        <div class="col-md-5 col-md-push-7 text-right tablet-center mobile-center scrollReveal sr-right">
+          <div class="padding-top-2x hidden-sm hidden-xs"></div>
+          <h4>Perfection in Details</h4>
+          <p class="text-lg text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo laborum nostrum odit eos cumque enim animi molestiae facere eaque explicabo ipsa quis sequi adipisci.</p>
+          <a href="#" class="btn btn-default btn-icon-right waves-effect waves-light">
+            See Documentation
+            <i class="icon-arrow-right"></i>
+          </a>
+        </div>
+        <div class="col-md-7 col-md-pull-5 scrollReveal sr-left">
+          <div class="padding-top-2x visible-sm visible-xs"></div>
+          <img src="img/home/laptop.png" class="block-center" alt="Laptop">
+        </div>
+      </div><!-- .row -->
+    </section><!-- .container -->
+
+    <!-- Text + Image -->
+    <!-- Fullwidth section has bunch of modifier classes to alter its appearance: ".border-top, .border-bottom, .arrow-top, .arrow-bottom, .bg-gray, .bg-default, .bg-primary, .bg-parallax". They can be used separately or alltogether. -->
+    <section class="fw-section bg-parallax border-top border-bottom padding-top-3x padding-bottom-3x" style="background-image: url(img/home/startup-bg02.jpg);" data-stellar-background-ratio="0.65">
+      <div class="overlay overlay-light" style="opacity: .9;"></div>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+            <h4>Even on Watch</h4>
+            <p class="text-lg text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et  magna aliqua.</p>
+          </div>
+        </div>
+        <img src="img/home/watches.png" class="block-center space-top-2x" alt="Watches">
+      </div><!-- .container -->
+    </section><!-- .fw-section.bg-parallax.border-top.border-bottom -->
+
+    <!-- Blog Posts -->
+    <section class="container padding-top-3x padding-bottom-3x">
+      <h2 class="block-title text-center">
+        Read Our Blog
+        <small>Popular posts</small>
+      </h2>
+      <div class="grid isotope-grid col-2">
+        <div class="gutter-sizer"></div>
+        <div class="grid-sizer"></div>
+
+        <!-- Post -->
+        <div class="grid-item">
+          <article class="post-item">
+            <a href="post-no-sidebar.html" class="post-thumb waves-effect">
+              <img src="img/blog/post01.jpg" alt="Post01">
+            </a><!-- .post-thumb -->
+            <div class="post-body">
+              <div class="post-meta">
+                <div class="column">
+                  <span>
+                    <i class="icon-head"></i>
+                    <a href="#">Bedismo</a>
+                  </span>
+                  <span>in</span>
+                  <span>
+                    <i class="icon-ribbon"></i>
+                    <a href="#">Support</a>
+                  </span>
+                  <span class="post-comments">
+                    <i class="icon-speech-bubble"></i>
+                    <a href="#">12</a>
+                  </span>
+                </div>
+                <div class="column"><span>24.12.2015</span></div>
+              </div><!-- .post-meta -->
+              <a href="post-no-sidebar.html" class="post-title">
+                <h3>Reading Design &amp; Typing Art</h3>
+              </a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ullamco laboris nisi ut aliquip ex ea co...</p>
+              <a href="post-no-sidebar.html">Read More</a>
+            </div><!-- .post-body -->
+          </article><!-- .post-item -->
+        </div><!-- .grid-item -->
+
+        <!-- Post -->
+        <div class="grid-item">
+          <article class="post-item format-video">
+            <a href="post-no-sidebar.html" class="post-thumb waves-effect">
+              <img src="img/blog/post02.jpg" alt="Post02">
+            </a><!-- .post-thumb -->
+            <div class="post-body">
+              <div class="post-meta">
+                <div class="column">
+                  <span class="post-format"></span>
+                  <span>
+                    <i class="icon-head"></i>
+                    <a href="#">Rokaux</a>
+                  </span>
+                  <span>in</span>
+                  <span>
+                    <i class="icon-ribbon"></i>
+                    <a href="#">Technology</a>
+                  </span>
+                  <span class="post-comments">
+                    <i class="icon-speech-bubble"></i>
+                    <a href="#">10</a>
+                  </span>
+                </div>
+                <div class="column"><span>18.12.2015</span></div>
+              </div><!-- .post-meta -->
+              <a href="post-no-sidebar.html" class="post-title">
+                <h3>Sounds &amp; Stars</h3>
+              </a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ullamco laboris nisi ut aliquip ex ea co...</p>
+              <a href="post-no-sidebar.html">Read More</a>
+            </div><!-- .post-body -->
+          </article><!-- .post-item -->
+        </div><!-- .grid-item -->
+      </div><!-- .grid.isotope-grid.col-2 -->
+    </section><!-- .container -->
+
+    <!-- Team Type 1-->
+    <section class="container padding-bottom-3x">
+      <h2 class="block-title text-center scrollReveal sr-bottom">
+        Technology Company That Builds Solutions
+        <small>Who we are?</small>
+      </h2>
+      <div class="row padding-top">
+        <div class="col-lg-3 col-sm-6 scrollReveal sr-bottom sr-ease-in-out-back">
+          <div class="teammate-1 text-center">
+            <div class="thumbnail">
+              <div class="flipper">
+                <div class="front">
+                  <img src="img/team/01.jpg" alt="Team">
+                </div>
+                <div class="back">
+                  <p class="padding-top">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus natus, reiciendis vel exercitationem error.</p>
+                  <div class="social-bar">
+                    <a href="#" class="sb-skype" data-toggle="tooltip" title="Skype">
+                      <i class="fa fa-skype"></i>
+                    </a>
+                    <a href="#" class="sb-facebook" data-toggle="tooltip" title="Facebook">
+                      <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="#" class="sb-twitter" data-toggle="tooltip" title="Twitter">
+                      <i class="fa fa-twitter"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 class="teammate-name">Andy Cabana</h3>
+            <p>Developer</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 scrollReveal sr-bottom sr-delay-1 sr-ease-in-out-back">
+          <div class="teammate-1 text-center">
+            <div class="thumbnail">
+              <div class="flipper">
+                <div class="front">
+                  <img src="img/team/02.jpg" alt="Team">
+                </div>
+                <div class="back">
+                  <p class="padding-top">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus natus, reiciendis vel exercitationem error.</p>
+                  <div class="social-bar">
+                    <a href="#" class="sb-facebook" data-toggle="tooltip" title="Facebook">
+                      <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="#" class="sb-dribbble" data-toggle="tooltip" title="Dribbble">
+                      <i class="fa fa-dribbble"></i>
+                    </a>
+                    <a href="#" class="sb-behance" data-toggle="tooltip" title="Behance">
+                      <i class="fa fa-behance"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 class="teammate-name">Kale Lake</h3>
+            <p>Designer</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 scrollReveal sr-bottom sr-delay-2 sr-ease-in-out-back">
+          <div class="teammate-1 text-center">
+            <div class="thumbnail">
+              <div class="flipper">
+                <div class="front">
+                  <img src="img/team/03.jpg" alt="Team">
+                </div>
+                <div class="back">
+                  <p class="padding-top">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus natus, reiciendis vel exercitationem error.</p>
+                  <div class="social-bar">
+                    <a href="#" class="sb-stackoverflow" data-toggle="tooltip" title="Stack Overflow">
+                      <i class="fa fa-stack-overflow"></i>
+                    </a>
+                    <a href="#" class="sb-facebook" data-toggle="tooltip" title="Facebook">
+                      <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="#" class="sb-google-plus" data-toggle="tooltip" title="Google Plus">
+                      <i class="fa fa-google-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 class="teammate-name">Jane Birkins</h3>
+            <p>Support</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 scrollReveal sr-bottom sr-delay-3 sr-ease-in-out-back">
+          <div class="teammate-1 text-center">
+            <div class="thumbnail-static">
+              <img src="img/team/00.png" alt="Hiring">
+              <h4>We Are Hiring</h4>
+            </div>
+            <h3 class="teammate-name">Maybe You?</h3>
+            <p>Designer, Developer</p>
+          </div>
+        </div>
+      </div><!-- .row -->
+    </section><!-- .container -->
+
+    <!-- Funding Progress -->
+    <!-- Fullwidth section has bunch of modifier classes to alter its appearance: ".border-top, .border-bottom, .arrow-top, .arrow-bottom, .bg-gray, .bg-default, .bg-primary, .bg-parallax". They can be used separately or alltogether. -->
+    <section class="fw-section next-to-footer border-top padding-top-3x padding-bottom-3x" style="background-image: url(img/home/funding-progress-bg.jpg);">
+      <div class="container padding-bottom-3x">
+        <div class="row">
+          <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+            <h4 class="text-center">Our Great Project</h4>
+            <p class="text-gray text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h4 class="text text-right text-bold padding-top space-bottom-none mobile-center">&pound;17,171</h4>
+            <div class="row">
+              <div class="col-sm-6 mobile-center">
+                <p class="text-gray">23 Days Left</p>
+              </div>
+              <div class="col-sm-6 mobile-center text-right">
+                <p class="text-gray">pledged of &pound;30,000 goal</p>
+              </div>
+            </div>
+            <!-- Class ".progress-animated" enables animation on scroll. When use this class make sure you set your style="width" attribute to 0% OR remove it entirely. -->
+            <div class="progress progress-animated">
+              <div class="label">
+                <span>Funded</span>
+                <span class="units text-default">65%</span>
+              </div>
+              <div class="progress-bar progress-bar-default" data-valuenow="65"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <a href="#" class="btn btn-kickstarter btn-block waves-effect waves-light">Back This Project on Kickstarter</a>
+              </div>
+              <div class="col-sm-6">
+                <a href="#" class="btn btn-indie btn-block waves-effect waves-light">Back This Project on IndieGoGo</a>
+              </div>
+            </div>
+          </div>
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </section><!-- .fw-section.next-to-footer.border-top -->
+
+    <!-- Scroll To Top Button -->
+    <a href="#" class="scroll-to-top-btn">
+      <i class="icon-arrow-up"></i> 
+    </a><!-- .scroll-to-top-btn -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="top-footer">
+        <div class="container">
+          <div class="tools">
+            <div class="cell">
+              <i><img src="img/footer/icons/help.png" alt="Email"></i>
+              <span><a href="mailto:info@email.com">info@email.com</a></span>
+            </div>
+            <div class="cell">
+              <i><img src="img/footer/icons/phone.png" alt="Phone"></i>
+              <span><a href="#">+10 (8) 555 333</a></span>
+            </div>
+            <div class="cell">
+              <i><img src="img/footer/icons/chat.png" alt="Chat"></i>
+              <span><a href="#">Live Chat</a></span>
+            </div>
+          </div>
+          <div class="subscribe">
+            <div class="subscribe-form">
+              <i><img src="img/footer/icons/envelope.png" alt="Subscribe"></i>
+              <form action="//8guild.us3.list-manage.com/subscribe/post?u=168a366a98d3248fbc35c0b67&amp;id=011a3332a0" method="post" target="_blank" novalidate autocomplete="off">
+                <label for="subscr_email" class="sr-only">Subscribe to latest news</label>
+                <input type="email" class="form-control" id="subscr_email" placeholder="Your Email">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;">
+                  <input type="text" name="b_168a366a98d3248fbc35c0b67_011a3332a0" tabindex="-1" value="">
+                </div>
+                <button type="submit"><i class="icon-mail"></i></button>
+              </form>
+            </div>
+          </div>
+        </div><!-- .container -->
+      </div><!-- .top-footer -->
+
+      <div class="bottom-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <section class="widget widget_text">
+                <a href="index.html" class="site-logo">
+                  <img src="img/logo.png" alt="Nucleus">
+                </a><!-- .site-logo -->
+                <p>Left your phone on the train? Your photos, and videos are safe. Just sign in  from any device, and your files will be there waiting for you.</p>
+              </section><!-- .widget.widget_text -->
+            </div><!-- .col-md-3 -->
+            <div class="col-md-3 col-sm-6">
+              <section class="widget widget_pages">
+                <h3 class="widget-title">
+                  <i class="icon-ribbon"></i>
+                  Nucleus
+                </h3>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#">Domains</a></li>
+                  <li><a href="home-hosting.html">Hosting</a></li>
+                </ul>
+              </section><!-- .widget.widget_pages -->
+            </div><!-- .col-md-3 -->
+            <div class="clearfix visible-sm"></div>
+            <div class="col-md-3 col-sm-6">
+              <section class="widget widget_pages">
+                <h3 class="widget-title">
+                  <i class="icon-cog"></i>
+                  Support
+                </h3>
+                <ul>
+                  <li><a href="help-general.html">Help Center</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+              </section><!-- .widget.widget_pages -->
+            </div><!-- .col-md-3 -->
+            <div class="col-md-3 col-sm-6">
+              <section class="widget widget_pages">
+                <h3 class="widget-title">
+                  <i class="icon-globe"></i>
+                  Community
+                </h3>
+                <ul>
+                  <li><a href="#">Developers</a></li>
+                  <li><a href="#">Referrals</a></li>
+                  <li><a href="#">Forum</a></li>
+                </ul>
+              </section><!-- .widget.widget_pages -->
+            </div><!-- .col-md-3 -->
+          </div><!-- .row -->
+          <div class="copyright">
+            <div class="column">
+              <p>&copy; Nucleus 2015. Made by <a href="http://8guild.com/" target="_blank">8Guild</a> with <i class="fa fa-heart text-danger"></i> love.</p>
+            </div><!-- .column -->
+            <div class="column">
+              <div class="cards">
+                <img src="img/cards.png" alt="Credit Cards">
+              </div>
+            </div><!-- .column -->
+          </div><!-- .copyright -->
+        </div><!-- .container -->
+      </div><!-- .bottom-footer -->
+    </footer><!-- .footer -->
+
+  </div><!-- .page-wrapper -->
+
+  <!-- JavaScript (jQuery) libraries, plugins and custom scripts -->
+  <script src="js/vendor/jquery-2.1.4.min.js"></script>
+  <script src="js/vendor/preloader.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/vendor/waves.min.js"></script>
+  <script src="js/vendor/placeholder.js"></script>
+  <script src="js/vendor/smoothscroll.js"></script>
+  <script src="js/vendor/waypoints.min.js"></script>
+  <script src="js/vendor/isotope.pkgd.min.js"></script>
+  <script src="js/vendor/velocity.min.js"></script>
+  <script src="js/vendor/magnific-popup.min.js"></script>
+  <script src="js/vendor/owl.carousel.min.js"></script>
+  <script src="js/vendor/jquery.stellar.min.js"></script>
+  <script src="js/vendor/scrollreveal.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+</body><!-- <body> -->
+
+</html>

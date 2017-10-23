@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Nucleus | App Tour Slider Rotate</title>
+
+  <!--SEO Meta Tags-->
+  <meta name="description" content="Nucleus Multi-Purpose Technology Template" />
+  <meta name="keywords" content="multipurpose, technology, business, corporate, hosting, web, startup, app showcase, mobile, blog, portfolio, landing, shortcodes, html5, css3, jquery, js, gallery, slider, touch, creative" />
+  <meta name="author" content="8Guild" />
+
+  <!--Mobile Specific Meta Tag-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- All Theme Styles including Bootstrap, FontAwesome, etc. compiled from styles.scss-->
+  <link href="css/styles.min.css" rel="stylesheet" media="screen">
+
+  <!--Modernizr / Detectizr-->
+  <script src="js/vendor/modernizr.custom.js"></script>
+  <script src="js/vendor/detectizr.min.js"></script>
+</head>
+
+<!-- Body -->
+<!-- hijacking: on/off - animation: none/scaleDown/rotate/gallery/opacity/parallax -->
+<!-- Please note: if you set hijacking to "on" make sure you remove smoothscroll.js at the most bottom of the page. -->
+<!-- "is-preloader preloading" is a helper classes if preloader is enabled. -->
+<body class="scroll-slideshow is-preloader preloading" data-hijacking="off" data-animation="rotate">
+  
+  <!-- Preloader -->
+  <!-- 
+      Data API:
+      data-spinner - Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
+      data-screenbg - Screen background color. Hex, RGB or RGBA colors
+   -->
+  <div id="preloader" data-spinner="spinner1" data-screenbg="#fff"></div>
+
+  <!-- Page Wrapper -->
+  <div class="page-wrapper">
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <button type="button" class="close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div class="modal-content text-center">
+          <h4>Login With Social Account</h4>
+          <div class="space-bottom-2x">
+            <a href="#" class="btn google-login waves-effect waves-light">Google<i class="fa fa-google"></i></a>
+            <a href="#" class="btn twitter-login waves-effect waves-light">Twitter<i class="fa fa-twitter"></i></a>
+            <a href="#" class="btn facebook-login waves-effect waves-light">Facebook<i class="fa fa-facebook"></i></a>
+          </div>
+          <h4>Or by Email</h4>
+          <form method="post">
+            <input type="email" class="form-control" placeholder="Email" required>
+            <input type="password" class="form-control" placeholder="Password" required>
+            <div class="form-group">
+              <button type="submit" class="btn login-btn btn-default waves-effect waves-light">Login into your account<i class="icon-head"></i></button>
+            </div>
+            <div class="text-left">
+              <span class="text-sm text-semibold">New to Nucleus? <a href="#">Sign Up</a></span>
+            </div>
+          </form><!-- <form> -->
+        </div><!-- .modal-content -->
+      </div><!-- .modal-dialog -->
+    </div><!-- .modal.fade -->
+
+    <!-- Navbar -->
+    <!-- Add class ".navbar-sticky" to make navbar stuck when it hits the top of the page. Another modifier class is: "navbar-fullwidth" to stretch navbar and make it occupy 100% of the page width. The screen width at which navbar collapses can be controlled through the variable "$nav-collapse" in sass/variables.scss -->
+    <header class="navbar navbar-sticky navbar-fullwidth">
+      
+      <!-- Toolbar -->
+      <div class="topbar">
+        <div class="container">
+          <a href="index.html" class="site-logo">
+            <img src="img/logo.png" alt="Nucleus">
+          </a><!-- .site-logo -->
+
+          <!-- Mobile Menu Toggle -->
+          <div class="nav-toggle"><span></span></div>
+
+          <div class="toolbar">
+            <a href="#" class="text-sm" data-toggle="modal" data-target="#loginModal">Sign up</a>
+            <a href="#" class="btn btn-sm btn-default btn-icon-right waves-effect waves-light" data-toggle="modal" data-target="#loginModal">Log In <i class="icon-head"></i></a>
+            <!-- <a href="shopping-cart.html" class="cart-btn"><i class="icon-bag"></i></a> -->
+            <div class="search-btn">
+              <i class="icon-search"></i>
+              <form method="post" class="search-box">
+                <input type="text" class="form-control input-sm" placeholder="Search">
+                <button type="submit"><i class="icon-search"></i></button>
+              </form>
+            </div><!-- .search-btn -->
+          </div><!-- .toolbar -->
+        </div><!-- .container -->
+      </div><!-- .topbar -->
+
+      <!-- Main Navigation -->
+      <div class="container">
+        <nav class="main-navigation">
+          <ul class="menu">
+            <li class="menu-item-has-children">
+              <a href="#">Home</a>
+              <div class="mega-menu">
+                <ul>
+                  <li><a href="home-hosting.html">Hosting &amp; Cloud Services</a></li>
+                  <li><a href="home-app-showcase.html">App Showcase Landing</a></li>
+                  <li><a href="home-conference.html">Conference &amp; Meetings</a></li>
+                  <li><a href="home-startup.html">Startup Landing Page</a></li>
+                  <li><a href="home-shop.html">Shop Homepage</a></li>
+                  <li><a href="home-product-promo.html">Product Promo Page</a></li>
+                  <li><a href="home-seo.html">SEO Services Landing</a></li>
+                </ul>
+                <div class="content">
+                  <img src="img/menu-banner.png" alt="Image">
+                </div>
+              </div>
+            </li>
+            <li class="current-menu-item menu-item-has-children">
+              <a href="#">Features</a>
+              <ul class="sub-menu"> 
+                <li><a href="features.html">Features Page</a></li>
+                <li><a href="tour-scale.html">App Tour Slider Scale</a></li>
+                <li class="current-menu-item"><a href="tour-rotate.html">App Tour Slider Rotate</a></li>
+                <li><a href="tour-gallery.html">App Tour Slider Gallery</a></li>
+                <li><a href="tour-opacity.html">App Tour Slider Opacity</a></li>
+                <li><a href="tour-parallax.html">App Tour Slider Parallax</a></li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">Help</a>
+              <ul class="sub-menu"> 
+                <li><a href="help-general.html">Help Center General</a></li>
+                <li><a href="help-topic.html">Help Center Topic</a></li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">Blog</a>
+              <ul class="sub-menu"> 
+                <li><a href="blog-no-sidebar.html">Blog No Sidebar</a></li>
+                <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
+                <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
+                <li><a href="post-no-sidebar.html">Single Post No Sidebar</a></li>
+                <li><a href="post-right-sidebar.html">Single Post Right Sidebar</a></li>
+                <li><a href="post-left-sidebar.html">Single Post Left Sidebar</a></li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">Portfolio</a>
+              <ul class="sub-menu">
+                <li><a href="portfolio-standard.html">Standard Grid</a></li>
+                <li><a href="portfolio-grid-gap.html">Grid With Gap</a></li>
+                <li><a href="portfolio-grid-no-gap.html">Grid No Gap</a></li>
+                
+              </ul>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">Shop</a>
+              <ul class="sub-menu"> 
+                <li><a href="shop-catalog.html">Shop Catalog</a></li>
+                <li><a href="shop-single.html">Single Product</a></li>
+                <li><a href="shopping-cart.html">Shopping Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">Pages</a>
+              <ul class="sub-menu"> 
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="press-kit.html">Press Kit</a></li>
+                <li><a href="404.html">404</a></li>
+                <li><a href="elements.html">Elements</a></li>
+              </ul>
+            </li>
+          </ul><!-- .menu -->
+        </nav><!-- .main-navigation -->
+      </div><!-- .container -->
+      <div class="social-bar mobile-socials">
+        <a href="#" class="sb-skype">
+          <i class="fa fa-skype"></i>
+        </a>
+        <a href="#" class="sb-facebook">
+          <i class="fa fa-facebook"></i>
+        </a>
+        <a href="#" class="sb-twitter">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </div>
+    </header><!-- .navbar -->
+    
+    <!-- Scroll Slideshow -->
+    <section class="cd-section visible">
+      <div>
+        <div class="content" style="background-image: url(img/scroll-slideshow/01.png);"></div>
+      </div>
+    </section><!-- .cd-section.visible -->
+
+    <section class="cd-section">
+      <div>
+        <div class="content" style="background-image: url(img/scroll-slideshow/02.png);"></div>
+      </div>
+    </section><!-- .cd-section -->
+
+    <section class="cd-section">
+      <div>
+        <div class="content" style="background-image: url(img/scroll-slideshow/03.png);"></div>
+      </div>
+    </section><!-- .cd-section -->
+
+    <nav>
+      <ul class="cd-vertical-nav">
+        <li><a href="#" class="cd-prev inactive"><i class="icon-arrow-up"></i></a></li>
+        <li><a href="#" class="cd-next"><i class="icon-arrow-down"></i></a></li>
+      </ul>
+    </nav><!-- .cd-vertical-nav -->
+  </div><!-- .page-wrapper -->
+
+  <!-- JavaScript (jQuery) libraries, plugins and custom scripts -->
+  <script src="js/vendor/jquery-2.1.4.min.js"></script>
+  <script src="js/vendor/preloader.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/vendor/waves.min.js"></script>
+  <script src="js/vendor/placeholder.js"></script>
+  <script src="js/vendor/smoothscroll.js"></script>
+  <script src="js/vendor/waypoints.min.js"></script>
+  <script src="js/vendor/velocity.min.js"></script>
+  <script src="js/vendor/velocity.ui.min.js"></script>
+  <script src="js/vendor/scroll-effect.js"></script>
+  <script src="js/scripts.js"></script>
+
+</body><!-- <body> -->
+
+</html>

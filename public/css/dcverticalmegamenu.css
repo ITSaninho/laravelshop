@@ -1,0 +1,136 @@
+/* Page */
+body,html,div,blockquote,img,label,p,h1,h2,h3,h4,h5,h6,pre,ul,ol,li,dl,dt,dd,form,a,fieldset,input,th,td{border:0;outline:none;margin:0;padding:0;}
+ul{list-style:none;}
+
+/* Demo Page Styles */
+body {font: normal 13px Arial, sans-serif;}
+h2 {font: normal 26px Arial, sans-serif; padding: 20px 0; margin: 0 0 30px 0;}
+.wrap {width: 960px; margin: 0 auto;}
+.demo-container {padding: 20px 0; min-width: 250px; width: 261px; float: left;}
+.demo-container.right {float: right;}
+.demo-container h4 {font-size: 14px; margin: 0 0 5px 0;}
+.clear {clear: both;}
+
+
+#sub_menu{
+    padding: 0px;
+    margin-left: 0px;
+
+
+}
+#sub_menu_li{
+    padding: 0px;
+}
+
+#sub_menu_li_a{
+    margin-left: 10px;
+}
+
+/* Vertical Mega Menu Styles */
+.mega-menu{
+    font: bold 13px Arial, sans-serif;
+    line-height: 16px;
+    background: #fff;
+    border-left: 1px solid #1B1B1B;
+    position: relative; /* Required */
+}
+.mega-menu li a {
+    display: block;
+    color: #333;
+    padding: 12px 38px 12px 25px;
+    text-decoration: none;
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #222;
+    border-right: 1px solid #1B1B1B;
+}
+.mega-menu li a:hover, .mega-menu li.mega-hover a {
+    background: #2895f1;
+    color: #fff;
+    border-right: 1px solid #2895f1;
+}
+.mega-menu li a.dc-mega {
+    position: relative;
+}
+/* Add arrow icon to parent links */
+.mega-menu li a .dc-mega-icon {
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    width: 6px;
+    height: 8px;
+    background: url(images/arrow_right.png) no-repeat 0 0;
+}
+/* Mega menu container */
+.mega-menu li .sub-container {
+    position: absolute; /* Required */
+    background: #2895f1;
+    padding: 10px 0px 0 10px;
+    border: 1px solid #2895f1;
+    border-left: none;
+}
+.mega-menu li .sub-container .sub {}
+
+.mega-menu li .sub .row {
+    width: 100%; overflow: hidden; /* Clear floats */
+}
+.mega-menu li .sub li {
+    float: none;
+    width: auto;
+    font-size: 1em;
+    font-weight: normal;
+}
+.mega-menu li .sub li.mega-hdr {
+    float: left; /* Required */
+    margin: 0 5px 10px 5px;
+}
+.mega-menu li .sub a, .mega-menu.left li .sub a {
+    background: none;
+    border: none;
+    float: none;
+    color: #fff;
+    padding: 7px 10px;
+    display: block;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+.mega-menu li .sub li.mega-hdr a.mega-hdr-a {
+    padding: 0px 15px 0px 15px;
+    margin-bottom: 5px;
+    background: #a0a2a1;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+}
+.mega-menu li .sub li.mega-hdr a.mega-hdr-a:hover {
+    color: #ffffff;
+    background: #1bdb68;
+}
+.mega-menu .sub li.mega-hdr li a {
+    padding: 4px 5px 4px 20px;
+    background: url(images/arrow_white.png) no-repeat 5px 8px;
+    font-weight: normal;
+}
+.mega-menu .sub li.mega-hdr li a:hover {
+    color: #ffffff;
+    background: #1bdb68 url(images/arrow_on.png) no-repeat 5px 8px;
+}
+.mega-menu .sub ul li {
+    padding-right: 0;
+}
+/* Styling for menu items with only 2 levels */
+.mega-menu li .sub-container.non-mega .sub {
+    padding: 10px;}
+.mega-menu li .sub-container.non-mega li {
+    padding: 0;
+    margin: 0;
+    width: 150px;
+}
+.mega-menu li .sub-container.non-mega li a {
+    padding: 7px 5px 7px 22px;
+    background: url(images/arrow_white.png) no-repeat 7px 10px;
+}
+.mega-menu li .sub-container.non-mega li a:hover {
+    color: #ffffff ;
+    background: #efefef url(images/arrow_on.png) no-repeat 7px 10px;
+}

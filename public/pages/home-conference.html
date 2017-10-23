@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Nucleus | Conference &amp; Meetings</title>
+
+  <!--SEO Meta Tags-->
+  <meta name="description" content="Nucleus Multi-Purpose Technology Template" />
+  <meta name="keywords" content="multipurpose, technology, business, corporate, hosting, web, startup, app showcase, mobile, blog, portfolio, landing, shortcodes, html5, css3, jquery, js, gallery, slider, touch, creative" />
+  <meta name="author" content="8Guild" />
+
+  <!--Mobile Specific Meta Tag-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Vendor Styles -->
+  <link href="masterslider/style/masterslider.css" rel="stylesheet" media="screen">
+
+  <!-- All Theme Styles including Bootstrap, FontAwesome, etc. compiled from styles.scss-->
+  <link href="css/styles.min.css" rel="stylesheet" media="screen">
+
+  <!--Modernizr / Detectizr-->
+  <script src="js/vendor/modernizr.custom.js"></script>
+  <script src="js/vendor/detectizr.min.js"></script>
+
+  <!--Google Maps API-->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5DLwPPVAz88_k0yO2nmFe7T9k1urQs84"></script>
+</head>
+
+<!-- Body -->
+<!-- "is-preloader preloading" is a helper classes if preloader is enabled. -->
+<!-- Adding/Removing class ".parallax" is enabling/disabling background parallax effect on elements with background images and attributes data-stellar-background-ratio applied to them. Make sure you also added/removed link to stellar.js script before </body>. -->
+<body class="is-preloader preloading parallax">
+  
+  <!-- Preloader -->
+  <!-- 
+      Data API:
+      data-spinner - Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
+      data-screenbg - Screen background color. Hex, RGB or RGBA colors
+   -->
+  <div id="preloader" data-spinner="spinner1" data-screenbg="#fff"></div>
+
+  <!-- Page Wrapper -->
+  <div class="page-wrapper">
+
+    <!-- Social Bar -->
+    <!-- Change modifier class to ".bar-fixed-left" to position social bar on the left side of the page. -->
+    <div class="social-bar bar-fixed-right">
+      <a href="#" class="sb-skype">
+        <i class="fa fa-skype"></i>
+      </a>
+      <a href="#" class="sb-facebook">
+        <i class="fa fa-facebook"></i>
+      </a>
+      <a href="#" class="sb-twitter">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </div><!-- .social-bar -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <button type="button" class="close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div class="modal-content text-center">
+          <h4>Login With Social Account</h4>
+          <div class="space-bottom-2x">
+            <a href="#" class="btn google-login waves-effect waves-light">Google<i class="fa fa-google"></i></a>
+            <a href="#" class="btn twitter-login waves-effect waves-light">Twitter<i class="fa fa-twitter"></i></a>
+            <a href="#" class="btn facebook-login waves-effect waves-light">Facebook<i class="fa fa-facebook"></i></a>
+          </div>
+          <h4>Or by Email</h4>
+          <form method="post">
+            <input type="email" class="form-control" placeholder="Email" required>
+            <input type="password" class="form-control" placeholder="Password" required>
+            <div class="form-group">
+              <button type="submit" class="btn login-btn btn-default waves-effect waves-light">Login into your account<i class="icon-head"></i></button>
+            </div>
+            <div class="text-left">
+              <span class="text-sm text-semibold">New to Nucleus? <a href="#">Sign Up</a></span>
+            </div>
+          </form><!-- <form> -->
+        </div><!-- .modal-content -->
+      </div><!-- .modal-dialog -->
+    </div><!-- .modal.fade -->
+
+    <!-- Navbar -->
+    <!-- Add class ".navbar-sticky" to make navbar stuck when it hits the top of the page. Another modifier class is: "navbar-fullwidth" to stretch navbar and make it occupy 100% of the page width. The screen width at which navbar collapses can be controlled through the variable "$nav-collapse" in sass/variables.scss -->
+    <header class="navbar navbar-sticky navbar-fullwidth">
+      
+      <!-- Toolbar -->
+      <div class="topbar">
+        <div class="container">
+          <a href="index.html" class="site-logo">
+            <img src="img/logo.png" alt="Nucleus">
+          </a><!-- .site-logo -->
+
+          <!-- Mobile Menu Toggle -->
+          <div class="nav-toggle"><span></span></div>
+
+          <div class="toolbar">
+            <a href="#" class="text-sm" data-toggle="modal" data-target="#loginModal">Sign up</a>
+            <a href="#" class="btn btn-sm btn-default btn-icon-right waves-effect waves-light" data-toggle="modal" data-target="#loginModal">Log In <i class="icon-head"></i></a>
+            <!-- <a href="shopping-cart.html" class="cart-btn"><i class="icon-bag"></i></a> -->
+            <div class="search-btn">
+              <i class="icon-search"></i>
+              <form method="post" class="search-box">
+                <input type="text" class="form-control input-sm" placeholder="Search">
+                <button type="submit"><i class="icon-search"></i></button>
+              </form>
+            </div><!-- .search-btn -->
+          </div><!-- .toolbar -->
+        </div><!-- .container -->
+      </div><!-- .topbar -->
+
+      <!-- Main Navigation -->
+      <div class="container">
+        <nav class="main-navigation">
+          <ul class="menu">
+            <li class="current-menu-item menu-item-has-children">
+              <a href="#">Home</a>
+              <div class="mega-menu">
+                <ul>
+                  <li><a href="home-hosting.html">Hosting &amp; Cloud Services</a></li>
+                  <li><a href="home-app-showcase.html">App Showcase Landing</a></li>
+                  <li class="current-menu-item"><a href="home-conference.html">Conference &amp; Meetings</a></li>
+                  <li><a href="home-startup.html">Startup Landing Page</a></li>
+                  <li><a href="home-shop.html">Shop Homepage</a></li>
+                  <li><a href="home-product-promo.html">Product Promo Page</a></li>
+                  <li><a href="home-seo.html">SEO Services Landing</a></li>
+                </ul>
+                <div class="content">
+                  <img src="img/menu-banner.png" alt="Image">
+                </div>
+              </div>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">Features</a>
+              <ul class="sub-menu"> 
+                <li><a href="features.html">Features Page</a></li>
+                <li><a href="tour-scale.html">App Tour Slider Scale</a></li>
+                <li><a href="tour-rotate.html">App Tour Slider Rotate</a></li>
+                <li><a href="tour-gallery.html">App Tour Slider Gallery</a></li>
+                <li><a href="tour-opacity.html">App Tour Slider Opacity</a></li>
+                <li><a href="tour-parallax.html">App Tour Slider Parallax</a></li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">Help</a>
+              <ul class="sub-menu"> 
+                <li><a href="help-general.html">Help Center General</a></li>
+                <li><a href="help-topic.html">Help Center Topic</a></li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">Blog</a>
+              <ul class="sub-menu"> 
+                <li><a href="blog-no-sidebar.html">Blog No Sidebar</a></li>
+                <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
+                <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
+                <li><a href="post-no-sidebar.html">Single Post No Sidebar</a></li>
+                <li><a href="post-right-sidebar.html">Single Post Right Sidebar</a></li>
+                <li><a href="post-left-sidebar.html">Single Post Left Sidebar</a></li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">Portfolio</a>
+              <ul class="sub-menu">
+                <li><a href="portfolio-standard.html">Standard Grid</a></li>
+                <li><a href="portfolio-grid-gap.html">Grid With Gap</a></li>
+                <li><a href="portfolio-grid-no-gap.html">Grid No Gap</a></li>
+                
+              </ul>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">Shop</a>
+              <ul class="sub-menu"> 
+                <li><a href="shop-catalog.html">Shop Catalog</a></li>
+                <li><a href="shop-single.html">Single Product</a></li>
+                <li><a href="shopping-cart.html">Shopping Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">Pages</a>
+              <ul class="sub-menu"> 
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="press-kit.html">Press Kit</a></li>
+                <li><a href="404.html">404</a></li>
+                <li><a href="elements.html">Elements</a></li>
+              </ul>
+            </li>
+          </ul><!-- .menu -->
+        </nav><!-- .main-navigation -->
+      </div><!-- .container -->
+      <div class="social-bar mobile-socials">
+        <a href="#" class="sb-skype">
+          <i class="fa fa-skype"></i>
+        </a>
+        <a href="#" class="sb-facebook">
+          <i class="fa fa-facebook"></i>
+        </a>
+        <a href="#" class="sb-twitter">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </div>
+    </header><!-- .navbar -->
+
+    <!-- Intro Full Width Slider -->
+    <section class="master-slider fw-slider ms-skin-default space-bottom" id="conference-slider">
+      <div class="ms-slide" style="background-image: url(img/sliders/conference/01.jpg);" data-delay="7">
+        <div class="container padding-top-3x padding-bottom-3x">
+          <div class="row padding-top-3x padding-bottom-2x">
+            <div class="col-lg-10 col-lg-offset-1 text-center">
+              <h1 class="text-light">2015 International Conference on Computer, Robotics and Manufacturing Technologies</h1>
+              <h4 class="text-light text-thin">Nucleus meetups that connect you to experts to help find you what you want, when you want.</h4>
+              <div class="padding-top">
+                <a href="#" class="btn btn-primary btn-icon-right waves-effect waves-light">
+                  Register Now
+                  <i class="icon-location"></i>
+                </a>
+                <a href="#" class="btn btn-ghost btn-light waves-effect">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- .ms-slide -->
+      <div class="ms-slide" style="background-image: url(img/sliders/conference/02.jpg);" data-delay="7">
+        <div class="container padding-top-3x padding-bottom-3x">
+          <div class="row padding-top-3x padding-bottom-2x">
+            <div class="col-lg-10 col-lg-offset-1 text-center">
+              <h1 class="text-light">2016 International Conference on Computer, Robotics and Manufacturing Technologies</h1>
+              <h4 class="text-light text-thin">Nucleus meetups that connect you to experts to help find you what you want, when you want.</h4>
+              <div class="padding-top">
+                <a href="#" class="btn btn-primary btn-icon-right waves-effect waves-light">
+                  Register Now
+                  <i class="icon-location"></i>
+                </a>
+                <a href="#" class="btn btn-ghost btn-light waves-effect">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- .ms-slide -->
+      <div class="ms-slide" style="background-image: url(img/sliders/conference/03.jpg);" data-delay="7">
+        <div class="container padding-top-3x padding-bottom-3x">
+          <div class="row padding-top-3x padding-bottom-2x">
+            <div class="col-lg-10 col-lg-offset-1 text-center">
+              <h1 class="text-light">2017 International Conference on Computer, Robotics and Manufacturing Technologies</h1>
+              <h4 class="text-light text-thin">Nucleus meetups that connect you to experts to help find you what you want, when you want.</h4>
+              <div class="padding-top">
+                <a href="#" class="btn btn-primary btn-icon-right waves-effect waves-light">
+                  Register Now
+                  <i class="icon-location"></i>
+                </a>
+                <a href="#" class="btn btn-ghost btn-light waves-effect">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- .ms-slide -->
+    </section><!-- .master-slider.ms-skin-default -->
+
+    <!-- Timer -->
+    <!-- Fullwidth section has bunch of modifier classes to alter its appearance: ".border-top, .border-bottom, .arrow-top, .arrow-bottom, .bg-gray, .bg-default, .bg-primary, .bg-parallax". They can be used separately or alltogether. -->
+    <section class="fw-section border-bottom padding-top-3x padding-bottom-3x" style="background-image: url(img/home/conference-bg02.jpg);">
+      <div class="container">
+        <h2 class="block-title text-center scrollReveal sr-bottom">
+          Be a Part of Us
+          <small>Reserve your seat</small>
+        </h2>
+
+        <!-- Countdown -->
+        <!-- Date Format: month/day/year. "date-time" data attribute is required. -->
+        <div class="countdown padding-top scrollReveal sr-bottom" data-date-time="12/15/2016 12:00:00">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="item">
+                    <div class="days">00</div>
+                    <h4 class="days_ref">Days</h4>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="item">
+                    <div class="hours">00</div>
+                    <h4 class="hours_ref">Hours</h4>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="item">
+                    <div class="minutes">00</div>
+                    <h4 class="minutes_ref">Minutes</h4>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="item">
+                    <div class="seconds">00</div>
+                    <h4 class="seconds_ref">Days</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- .row -->
+        </div><!-- .countdow -->
+      </div><!-- .container -->
+    </section><!-- .fw-section.border-bottom -->
+
+    <!-- Speakers (Team Version 1) -->
+    <section class="container padding-top-3x padding-bottom-3x">
+      <h2 class="block-title text-center scrollReveal sr-bottom sr-ease-in-out-back">
+        Our Speakers
+        <small>Meet professionals</small>
+      </h2>
+      <div class="row padding-top">
+        <!-- Teammate -->
+        <div class="col-lg-3 col-sm-6 scrollReveal sr-bottom sr-ease-in-out-back">
+          <div class="teammate-2 mobile-center">
+            <div class="thumbnail">
+              <img src="img/team/04.jpg" alt="Team">
+              <div class="social-bar">
+                <a href="#" class="sb-skype" data-toggle="tooltip" title="Skype">
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a href="#" class="sb-facebook" data-toggle="tooltip" title="Facebook">
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a href="#" class="sb-twitter" data-toggle="tooltip" title="Twitter">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="teammate-name">Dave Gendhem</h3>
+            <span class="teammate-position">Java Developer</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et necessitatibus aperiam.</p>
+          </div>
+        </div>
+        <!-- Teammate -->
+        <div class="col-lg-3 col-sm-6 scrollReveal sr-bottom sr-delay-1 sr-ease-in-out-back">
+          <div class="teammate-2 mobile-center">
+            <div class="thumbnail">
+              <img src="img/team/05.jpg" alt="Team">
+              <div class="social-bar">
+                <a href="#" class="sb-facebook" data-toggle="tooltip" title="Facebook">
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a href="#" class="sb-dribbble" data-toggle="tooltip" title="Dribbble">
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a href="#" class="sb-behance" data-toggle="tooltip" title="Behance">
+                  <i class="fa fa-behance"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="teammate-name">Amy Rollhouse</h3>
+            <span class="teammate-position">Backend Developer</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et necessitatibus aperiam.</p>
+          </div>
+        </div>
+        <!-- Teammate -->
+        <div class="col-lg-3 col-sm-6 scrollReveal sr-bottom sr-delay-2 sr-ease-in-out-back">
+          <div class="teammate-2 mobile-center">
+            <div class="thumbnail">
+              <img src="img/team/06.jpg" alt="Team">
+              <div class="social-bar">
+                <a href="#" class="sb-stackoverflow" data-toggle="tooltip" title="Stack Overflow">
+                  <i class="fa fa-stack-overflow"></i>
+                </a>
+                <a href="#" class="sb-facebook" data-toggle="tooltip" title="Facebook">
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a href="#" class="sb-google-plus" data-toggle="tooltip" title="Google Plus">
+                  <i class="fa fa-google-plus"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="teammate-name">Jim Kirk</h3>
+            <span class="teammate-position">Backend Developer</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et necessitatibus aperiam.</p>
+          </div>
+        </div>
+        <!-- Teammate -->
+        <div class="col-lg-3 col-sm-6 scrollReveal sr-bottom sr-delay-3 sr-ease-in-out-back">
+          <div class="teammate-2 mobile-center">
+            <div class="thumbnail">
+              <img src="img/team/07.jpg" alt="Team">
+              <div class="social-bar">
+                <a href="#" class="sb-skype" data-toggle="tooltip" title="Skype">
+                  <i class="fa fa-skype"></i>
+                </a>
+                <a href="#" class="sb-facebook" data-toggle="tooltip" title="Facebook">
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a href="#" class="sb-twitter" data-toggle="tooltip" title="Twitter">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="teammate-name">Betty Ironsmith</h3>
+            <span class="teammate-position">Product Designer</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et necessitatibus aperiam.</p>
+          </div>
+        </div>
+      </div><!-- .row -->
+      <div class="text-center scrollReveal sr-bottom sr-ease-in-out-back">
+        <a href="#" class="btn btn-default btn-icon-right waves-effect waves-light">
+          More Speakers
+          <i class="icon-microphone"></i>
+        </a>
+      </div>
+    </section><!-- .container -->
+    
+    <!-- Mobile App -->
+    <!-- Fullwidth section has bunch of modifier classes to alter its appearance: ".border-top, .border-bottom, .arrow-top, .arrow-bottom, .bg-gray, .bg-default, .bg-primary, .bg-parallax". They can be used separately or alltogether. -->
+    <section class="fw-section bg-parallax padding-top-3x padding-bottom-3x" style="background-image: url(img/home/conference-bg03.jpg);" data-stellar-background-ratio="0.65">
+      <span class="overlay" style="opacity: .8;"></span>
+      <div class="container text-center padding-top-3x padding-bottom-3x">
+        <h2 class="text-light">Ideas Worth Spreading</h2>
+        <h4 class="text-normal text-light">Nucleus Phone app that connects you to experts to help find you what you want, when you want.</h4>
+        <a href="#" class="btn btn-primary btn-icon-right waves-effect waves-light">
+          Take Part in Event
+          <i class="icon-square-check"></i>
+        </a>
+      </div><!-- .container -->
+    </section><!-- .fw-section.bg-parallax -->
+
+    <!-- Event Schedule -->
+    <!-- Fullwidth section has bunch of modifier classes to alter its appearance: ".border-top, .border-bottom, .arrow-top, .arrow-bottom, .bg-gray, .bg-default, .bg-primary, .bg-parallax". They can be used separately or alltogether. -->
+    <section class="fw-section bg-parallax border-bottom padding-top-3x padding-bottom-3x" style="background-image: url(img/home/conference-bg04.jpg);" data-stellar-background-ratio="0.65">
+      <span class="overlay overlay-light" style="opacity: .9;"></span>
+      <div class="container">
+        <h2 class="block-title text-center scrollReveal sr-left">
+          Saturday, 05 August 2016
+          <small>Events Schedule</small>
+        </h2>
+        <div class="row scrollReveal sr-right">
+          <div class="col-lg-10 col-lg-offset-1">
+            <!-- Schedule Table -->
+            <div class="schedule-table text-center space-top">
+              <table>
+                <colgroup>
+                  <col>
+                  <col class="featured">
+                  <col>
+                  <col>
+                </colgroup>
+                <tr>
+                  <td>
+                    <span class="text-bold">Session</span>
+                  </td>
+                  <td>
+                    <span class="img-icon"><img src="img/home/icon.png" alt="Speakers"></span>
+                    <span class="text-bold">Speaker</span>
+                  </td>
+                  <td>
+                    <span class="text-bold">Time</span>
+                  </td>
+                  <td>
+                    <span class="text-bold">Venue</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-bold">Opening Remarks</td>
+                  <td>Dave Daghen</td>
+                  <td>08:45 AM</td>
+                  <td>Hall</td>
+                </tr>
+                <tr>
+                  <td class="text-bold">Designing WP</td>
+                  <td>Veronica Mars</td>
+                  <td>09:00 AM</td>
+                  <td>Room 1</td>
+                </tr>
+                <tr>
+                  <td class="text-bold">PHP of Future</td>
+                  <td>Dimchik Carnelia</td>
+                  <td>10:00 AM</td>
+                  <td>Room 2</td>
+                </tr>
+                <tr>
+                  <td class="text-bold">Java Development</td>
+                  <td>Karl Markob</td>
+                  <td>12:00 PM</td>
+                  <td>Room 1</td>
+                </tr>
+                <tr>
+                  <td class="text-bold">Wordpress on JS</td>
+                  <td>Chosen One</td>
+                  <td>13:00 PM</td>
+                  <td>Room 3</td>
+                </tr>
+                <tr>
+                  <td class="text-bold">Beer party</td>
+                  <td>All</td>
+                  <td>18:00 PM</td>
+                  <td>Hall</td>
+                </tr>
+              </table><!-- table -->
+            </div><!-- .schedule-table -->
+          </div><!-- .col-lg-10.col-lg-offset-1 -->
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </section><!-- .fw-section.bg-parallax.border-bottom -->
+
+    <!-- Partners -->
+    <section class="container padding-top-3x padding-bottom-3x scrollReveal sr-scaleUp sr-ease-in-out-back">
+      <h2 class="text-sm text-semibold text-gray text-uppercase text-center padding-top">Our Partners</h2>
+      <div class="row">
+        <div class="col-sm-6">
+          <img src="img/logos/partners01.png" alt="Partners">
+        </div>
+        <div class="col-sm-6">
+          <img src="img/logos/partners02.png" alt="Partners">
+        </div>
+      </div><!-- .row -->
+    </section><!-- .container -->
+
+    <!-- Gallery -->
+    <section class="container padding-bottom-3x">
+      <h2 class="block-title text-center">
+        Best Showcases
+        <small>Our gallery</small>
+      </h2>
+      <!-- Gallery Grid -->
+      <div class="gallery-grid">
+        <a href="img/gallery/01.jpg" class="gallery-item waves-effect waves-light">
+          <div class="thumbnail" style="background-image: url(img/gallery/th01.jpg);"></div>
+          <i class="icon-circle-plus"></i>
+        </a><!-- .gallery-item -->
+        <a href="img/gallery/02.jpg" class="gallery-item waves-effect waves-light">
+          <div class="thumbnail" style="background-image: url(img/gallery/th02.jpg);"></div>
+          <i class="icon-circle-plus"></i>
+        </a><!-- .gallery-item -->
+        <a href="img/gallery/03.jpg" class="gallery-item waves-effect waves-light">
+          <div class="thumbnail" style="background-image: url(img/gallery/th03.jpg);"></div>
+          <i class="icon-circle-plus"></i>
+        </a><!-- .gallery-item -->
+        <a href="img/gallery/04.jpg" class="gallery-item waves-effect waves-light">
+          <div class="thumbnail" style="background-image: url(img/gallery/th04.jpg);"></div>
+          <i class="icon-circle-plus"></i>
+        </a><!-- .gallery-item -->
+        <a href="img/gallery/05.jpg" class="gallery-item waves-effect waves-light">
+          <div class="thumbnail" style="background-image: url(img/gallery/th05.jpg);"></div>
+          <i class="icon-circle-plus"></i>
+        </a><!-- .gallery-item -->
+        <a href="img/gallery/06.jpg" class="gallery-item waves-effect waves-light">
+          <div class="thumbnail" style="background-image: url(img/gallery/th06.jpg);"></div>
+          <i class="icon-circle-plus"></i>
+        </a><!-- .gallery-item -->
+      </div><!-- .gallery-grid -->
+    </section><!-- .container -->
+
+    <!-- Split Contacts -->
+    <section class="split-contacts next-to-footer space-top">
+      <div class="column">
+        <!-- Data API: 
+             data-height="500" height of the map in pixels
+             data-address="Your address" string
+             data-zoom="number" to control map zoom when loaded
+             data-disable-controls="false/true" enable/disable map controls like pan, zoom, etc.
+             data-scrollwheel="true/false" enable/disable mouse scroll wheel zoom
+             data-marker="path_to_your_image" path to custom marker image
+             data-marker-title=" Your title" appears on marker hover
+             data-styles="[array]" you can adjust the look and feel of your map. Recommend to use https://snazzymaps.com
+         -->
+        <div class="google-map"
+             data-address="New York, USA"
+             data-zoom="13"
+             data-disable-controls="false"
+             data-scrollwheel="false"
+             data-marker="img/map-marker.png"
+             data-marker-title="Nucleus Office"
+             data-styles='[{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":60}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"off"},{"color":"#000000"},{"lightness":26}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":30}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":27},{"weight":1.2}]},{"featureType":"administrative","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"administrative.country","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.country","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.country","elementType":"labels.text","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.province","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.locality","elementType":"all","stylers":[{"visibility":"simplified"},{"saturation":"-100"},{"lightness":"40"}]},{"featureType":"administrative.neighborhood","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.land_parcel","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"visibility":"simplified"},{"gamma":"0.00"},{"lightness":"70"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":30}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"lightness":"13"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":31}]},{"featureType":"road","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":27}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":39},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":28}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":26}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":29}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":27}]}]'
+        ></div><!-- .google-map -->
+        <div class="contact-details text-light">
+          <div class="cd-head">
+            <div class="cd-icon">
+              <img src="img/home/contacts-icon.png" alt="Icon">
+            </div>
+            <div class="cd-title">
+              <h4>Event Location</h4>
+            </div>
+          </div>
+          <h6>8Guild Hall</h6>
+          <ul class="list-icon">
+            <li><i class="fa fa-map-marker"></i>105 Cypress Ave, NY<br>10012, USA</li>
+            <li><i class="fa fa-phone"></i>+10 (330) 555 48</li>
+            <li><i class="fa fa-envelope"></i>info@yoursite.com</li>
+          </ul>
+        </div>
+      </div><!-- .column -->
+      <div class="column" style="background-image: url(img/home/contacts-bg.jpg);">
+        <form method="post" class="contact-form ajax-form padding-top-3x" autocomplete="off">
+          <h4>Drop Us a Line</h4>
+          <div class="row">
+            <div class="col-sm-6">
+              <input type="text" class="form-control" name='name' placeholder="Name*">
+            </div>
+            <div class="col-sm-6">
+              <input type="email" class="form-control" name='email' placeholder="Email*">
+            </div>
+          </div>
+          <textarea name="message" class="form-control" rows="7" placeholder="Message"></textarea>
+          <button type="submit" class="btn btn-primary btn-block waves-effect waves-light">Send Message</button>
+          <!-- Validation Response -->
+          <div class="response-holder"></div>
+        </form><!-- .contact-form -->
+      </div><!-- .column -->
+    </section><!-- .split-contacts.next-to-footer -->
+
+    <!-- Scroll To Top Button -->
+    <a href="#" class="scroll-to-top-btn">
+      <i class="icon-arrow-up"></i> 
+    </a><!-- .scroll-to-top-btn -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="top-footer">
+        <div class="container">
+          <div class="tools">
+            <div class="cell">
+              <i><img src="img/footer/icons/help.png" alt="Email"></i>
+              <span><a href="mailto:info@email.com">info@email.com</a></span>
+            </div>
+            <div class="cell">
+              <i><img src="img/footer/icons/phone.png" alt="Phone"></i>
+              <span><a href="#">+10 (8) 555 333</a></span>
+            </div>
+            <div class="cell">
+              <i><img src="img/footer/icons/chat.png" alt="Chat"></i>
+              <span><a href="#">Live Chat</a></span>
+            </div>
+          </div>
+          <div class="subscribe">
+            <div class="subscribe-form">
+              <i><img src="img/footer/icons/envelope.png" alt="Subscribe"></i>
+              <form action="//8guild.us3.list-manage.com/subscribe/post?u=168a366a98d3248fbc35c0b67&amp;id=011a3332a0" method="post" target="_blank" novalidate autocomplete="off">
+                <label for="subscr_email" class="sr-only">Subscribe to latest news</label>
+                <input type="email" class="form-control" id="subscr_email" placeholder="Your Email">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;">
+                  <input type="text" name="b_168a366a98d3248fbc35c0b67_011a3332a0" tabindex="-1" value="">
+                </div>
+                <button type="submit"><i class="icon-mail"></i></button>
+              </form>
+            </div>
+          </div>
+        </div><!-- .container -->
+      </div><!-- .top-footer -->
+
+      <div class="bottom-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <section class="widget widget_text">
+                <a href="index.html" class="site-logo">
+                  <img src="img/logo.png" alt="Nucleus">
+                </a><!-- .site-logo -->
+                <p>Left your phone on the train? Your photos, and videos are safe. Just sign in  from any device, and your files will be there waiting for you.</p>
+              </section><!-- .widget.widget_text -->
+            </div><!-- .col-md-3 -->
+            <div class="col-md-3 col-sm-6">
+              <section class="widget widget_pages">
+                <h3 class="widget-title">
+                  <i class="icon-ribbon"></i>
+                  Nucleus
+                </h3>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#">Domains</a></li>
+                  <li><a href="home-hosting.html">Hosting</a></li>
+                </ul>
+              </section><!-- .widget.widget_pages -->
+            </div><!-- .col-md-3 -->
+            <div class="clearfix visible-sm"></div>
+            <div class="col-md-3 col-sm-6">
+              <section class="widget widget_pages">
+                <h3 class="widget-title">
+                  <i class="icon-cog"></i>
+                  Support
+                </h3>
+                <ul>
+                  <li><a href="help-general.html">Help Center</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+              </section><!-- .widget.widget_pages -->
+            </div><!-- .col-md-3 -->
+            <div class="col-md-3 col-sm-6">
+              <section class="widget widget_pages">
+                <h3 class="widget-title">
+                  <i class="icon-globe"></i>
+                  Community
+                </h3>
+                <ul>
+                  <li><a href="#">Developers</a></li>
+                  <li><a href="#">Referrals</a></li>
+                  <li><a href="#">Forum</a></li>
+                </ul>
+              </section><!-- .widget.widget_pages -->
+            </div><!-- .col-md-3 -->
+          </div><!-- .row -->
+          <div class="copyright">
+            <div class="column">
+              <p>&copy; Nucleus 2015. Made by <a href="http://8guild.com/" target="_blank">8Guild</a> with <i class="fa fa-heart text-danger"></i> love.</p>
+            </div><!-- .column -->
+            <div class="column">
+              <div class="cards">
+                <img src="img/cards.png" alt="Credit Cards">
+              </div>
+            </div><!-- .column -->
+          </div><!-- .copyright -->
+        </div><!-- .container -->
+      </div><!-- .bottom-footer -->
+    </footer><!-- .footer -->
+
+  </div><!-- .page-wrapper -->
+
+  <!-- JavaScript (jQuery) libraries, plugins and custom scripts -->
+  <script src="js/vendor/jquery-2.1.4.min.js"></script>
+  <script src="js/vendor/jquery.easing.min.js"></script>
+  <script src="js/vendor/preloader.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/vendor/waves.min.js"></script>
+  <script src="js/vendor/placeholder.js"></script>
+  <script src="js/vendor/smoothscroll.js"></script>
+  <script src="js/vendor/waypoints.min.js"></script>
+  <script src="js/vendor/velocity.min.js"></script>
+  <script src="js/vendor/magnific-popup.min.js"></script>
+  <script src="js/vendor/jquery.stellar.min.js"></script>
+  <script src="js/vendor/jquery.downCount.js"></script>
+  <script src="masterslider/masterslider.min.js"></script>
+  <script src="js/vendor/gmap3.min.js"></script>
+  <script src="mailer/mailer.js"></script>
+  <script src="js/vendor/scrollreveal.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+</body><!-- <body> -->
+
+</html>

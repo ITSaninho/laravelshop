@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Nucleus | Shop Homepage</title>
+
+  <!--SEO Meta Tags-->
+  <meta name="description" content="Nucleus Multi-Purpose Technology Template" />
+  <meta name="keywords" content="multipurpose, technology, business, corporate, hosting, web, startup, app showcase, mobile, blog, portfolio, landing, shortcodes, html5, css3, jquery, js, gallery, slider, touch, creative" />
+  <meta name="author" content="8Guild" />
+
+  <!--Mobile Specific Meta Tag-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- All Theme Styles including Bootstrap, FontAwesome, etc. compiled from styles.scss-->
+  <link href="css/styles.min.css" rel="stylesheet" media="screen">
+
+  <!--Modernizr / Detectizr-->
+  <script src="js/vendor/modernizr.custom.js"></script>
+  <script src="js/vendor/detectizr.min.js"></script>
+</head>
+
+<!-- Body -->
+<!-- "is-preloader preloading" is a helper classes if preloader is enabled. -->
+<!-- Adding/Removing class ".parallax" is enabling/disabling background parallax effect on elements with background images and attributes data-stellar-background-ratio applied to them. Make sure you also added/removed link to stellar.js script before </body>. -->
+<body class="is-preloader preloading parallax">
+
+  <!-- Preloader -->
+  <!--
+      Data API:
+      data-spinner - Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
+      data-screenbg - Screen background color. Hex, RGB or RGBA colors
+   -->
+  <div id="preloader" data-spinner="spinner1" data-screenbg="#fff"></div>
+
+  <!-- Page Wrapper -->
+  <div class="page-wrapper">
+
+    <!-- Social Bar -->
+    <!-- Change modifier class to ".bar-fixed-left" to position social bar on the left side of the page. -->
+    <div class="social-bar bar-fixed-right">
+      <a href="#" class="sb-skype">
+        <i class="fa fa-skype"></i>
+      </a>
+      <a href="#" class="sb-facebook">
+        <i class="fa fa-facebook"></i>
+      </a>
+      <a href="#" class="sb-twitter">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </div><!-- .social-bar -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <button type="button" class="close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div class="modal-content text-center">
+          <h4>Login With Social Account</h4>
+          <div class="space-bottom-2x">
+            <a href="#" class="btn google-login waves-effect waves-light">Google<i class="fa fa-google"></i></a>
+            <a href="#" class="btn twitter-login waves-effect waves-light">Twitter<i class="fa fa-twitter"></i></a>
+            <a href="#" class="btn facebook-login waves-effect waves-light">Facebook<i class="fa fa-facebook"></i></a>
+          </div>
+          <h4>Or by Email</h4>
+          <form method="post">
+            <input type="email" class="form-control" placeholder="Email" required>
+            <input type="password" class="form-control" placeholder="Password" required>
+            <div class="form-group">
+              <button type="submit" class="btn login-btn btn-default waves-effect waves-light">Login into your account<i class="icon-head"></i></button>
+            </div>
+            <div class="text-left">
+              <span class="text-sm text-semibold">New to Nucleus? <a href="#">Sign Up</a></span>
+            </div>
+          </form><!-- <form> -->
+        </div><!-- .modal-content -->
+      </div><!-- .modal-dialog -->
+    </div><!-- .modal.fade -->
+
+    <!-- Navbar -->
+    <!-- Add class ".navbar-sticky" to make navbar stuck when it hits the top of the page. Another modifier class is: "navbar-fullwidth" to stretch navbar and make it occupy 100% of the page width. The screen width at which navbar collapses can be controlled through the variable "$nav-collapse" in sass/variables.scss -->
+    <header class="navbar navbar-sticky navbar-fullwidth">
+
+      <!-- Toolbar -->
+      <div class="topbar">
+        <div class="container">
+          <a href="index.html" class="site-logo">
+            <img src="img/logo.png" alt="Nucleus">
+          </a><!-- .site-logo -->
+
+          <!-- Mobile Menu Toggle -->
+          <div class="nav-toggle"><span></span></div>
+
+          <div class="toolbar">
+            <a href="#" class="text-sm" data-toggle="modal" data-target="#loginModal">Sign up</a>
+            <a href="#" class="btn btn-sm btn-default btn-icon-right waves-effect waves-light" data-toggle="modal" data-target="#loginModal">Log In <i class="icon-head"></i></a>
+            <!-- <a href="shopping-cart.html" class="cart-btn"><i class="icon-bag"></i></a> -->
+            <div class="search-btn">
+              <i class="icon-search"></i>
+              <form method="post" class="search-box">
+                <input type="text" class="form-control input-sm" placeholder="Search">
+                <button type="submit"><i class="icon-search"></i></button>
+              </form>
+            </div><!-- .search-btn -->
+          </div><!-- .toolbar -->
+        </div><!-- .container -->
+      </div><!-- .topbar -->
+
+      <!-- Main Navigation -->
+      <div class="container">
+        <nav class="main-navigation">
+          <ul class="menu">
+            <li class="current-menu-item menu-item-has-children">
+              <a href="#">Home</a>
+              <div class="mega-menu">
+                <ul>
+                  <li><a href="home-hosting.html">Hosting &amp; Cloud Services</a></li>
+                  <li><a href="home-app-showcase.html">App Showcase Landing</a></li>
+                  <li><a href="home-conference.html">Conference &amp; Meetings</a></li>
+                  <li><a href="home-startup.html">Startup Landing Page</a></li>
+                  <li class="current-menu-item"><a href="home-shop.html">Shop Homepage</a></li>
+                  <li><a href="home-product-promo.html">Product Promo Page</a></li>
+                  <li><a href="home-seo.html">SEO Services Landing</a></li>
+                </ul>
+                <div class="content">
+                  <img src="img/menu-banner.png" alt="Image">
+                </div>
+              </div>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">Features</a>
+              <ul class="sub-menu">
+                <li><a href="features.html">Features Page</a></li>
+                <li><a href="tour-scale.html">App Tour Slider Scale</a></li>
+                <li><a href="tour-rotate.html">App Tour Slider Rotate</a></li>
+                <li><a href="tour-gallery.html">App Tour Slider Gallery</a></li>
+                <li><a href="tour-opacity.html">App Tour Slider Opacity</a></li>
+                <li><a href="tour-parallax.html">App Tour Slider Parallax</a></li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">Help</a>
+              <ul class="sub-menu">
+                <li><a href="help-general.html">Help Center General</a></li>
+                <li><a href="help-topic.html">Help Center Topic</a></li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">Blog</a>
+              <ul class="sub-menu">
+                <li><a href="blog-no-sidebar.html">Blog No Sidebar</a></li>
+                <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
+                <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
+                <li><a href="post-no-sidebar.html">Single Post No Sidebar</a></li>
+                <li><a href="post-right-sidebar.html">Single Post Right Sidebar</a></li>
+                <li><a href="post-left-sidebar.html">Single Post Left Sidebar</a></li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">Portfolio</a>
+              <ul class="sub-menu">
+                <li><a href="portfolio-standard.html">Standard Grid</a></li>
+                <li><a href="portfolio-grid-gap.html">Grid With Gap</a></li>
+                <li><a href="portfolio-grid-no-gap.html">Grid No Gap</a></li>
+
+              </ul>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">Shop</a>
+              <ul class="sub-menu">
+                <li><a href="shop-catalog.html">Shop Catalog</a></li>
+                <li><a href="shop-single.html">Single Product</a></li>
+                <li><a href="shopping-cart.html">Shopping Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">Pages</a>
+              <ul class="sub-menu">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="press-kit.html">Press Kit</a></li>
+                <li><a href="404.html">404</a></li>
+                <li><a href="elements.html">Elements</a></li>
+              </ul>
+            </li>
+          </ul><!-- .menu -->
+        </nav><!-- .main-navigation -->
+      </div><!-- .container -->
+      <div class="social-bar mobile-socials">
+        <a href="#" class="sb-skype">
+          <i class="fa fa-skype"></i>
+        </a>
+        <a href="#" class="sb-facebook">
+          <i class="fa fa-facebook"></i>
+        </a>
+        <a href="#" class="sb-twitter">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </div>
+    </header><!-- .navbar -->
+
+    <!-- Intro Section -->
+    <!-- Fullwidth section has bunch of modifier classes to alter its appearance: ".border-top, .border-bottom, .arrow-top, .arrow-bottom, .bg-gray, .bg-default, .bg-primary, .bg-parallax". They can be used separately or alltogether. -->
+    <section class="fw-section bg-parallax bg-cover padding-top-2x padding-bottom-2x" style="background-image: url(img/home/shop-bg.jpg);" data-stellar-background-ratio="0.65">
+      <div class="container text-light">
+        <div class="row">
+          <div class="col-lg-5">
+            <img src="img/shop/server.png" alt="Nucleus" />
+          </div>
+          <div class="col-lg-7 padding-top-3x">
+            <h1 class="padding-top">Server Dedicated Hosting</h1>
+            <h4 class="text-normal">What makes our web hosting superior?</h4>
+            <ul class="list-featured">
+              <li>Common WordPress Installation</li>
+              <li>How Do I Check Item Compatibility?</li>
+              <li>Item Installation Guide &amp; Help Docs</li>
+              <li>Account Management</li>
+            </ul>
+            <a href="shop-catalog.html" class="btn btn-primary btn-icon-right waves-effect waves-light">
+              Shop Now
+              <i class="icon-bag"></i>
+            </a>
+            <a href="shop-single.html" class="btn btn-light btn-ghost">Learn More</a>
+
+          </div>
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </section><!-- .fw-section -->
+
+    <!-- Categories -->
+    <section class="container padding-top-3x padding-bottom-3x">
+      <h2 class="block-title text-center">
+        Top Categories
+        <small>Shop Our Servers</small>
+      </h2>
+      <div class="row padding-top">
+        <div class="col-sm-4">
+          <section class="widget widget_categories widget_shop_categories">
+            <div class="inner">
+              <h3 class="widget-title">
+                <i class="icon-ribbon"></i>
+                Server &amp; Workstation Systems
+              </h3>
+              <ul>
+                <li><a href="#">Tower Systems</a></li>
+                <li><a href="#">MicroServers</a></li>
+                <li><a href="#">Server Blade</a></li>
+                <li><a href="#">Rack Mount</a></li>
+              </ul>
+              <a href="shop-catalog.html">Shop All</a>
+            </div>
+            <div class="featured-image hidden-sm">
+              <img src="img/shop/widget/01.jpg" alt="Server" />
+            </div>
+          </section>
+        </div><!-- .col-sm-4 -->
+        <div class="col-sm-4">
+          <section class="widget widget_categories widget_shop_categories">
+            <div class="inner">
+              <h3 class="widget-title">
+                <i class="icon-ribbon"></i>
+                Server Barebones
+              </h3>
+              <ul>
+                <li><a href="#">1U Rackmount</a></li>
+                <li><a href="#">2U Rackmount</a></li>
+                <li><a href="#">3U Rackmount</a></li>
+                <li><a href="#">Storage Server</a></li>
+              </ul>
+              <a href="shop-catalog.html">Shop All</a>
+            </div>
+            <div class="featured-image hidden-sm">
+              <img src="img/shop/widget/02.jpg" alt="Server" />
+            </div>
+          </section>
+        </div><!-- .col-sm-4 -->
+        <div class="col-sm-4">
+          <section class="widget widget_categories widget_shop_categories">
+            <div class="inner">
+              <h3 class="widget-title">
+                <i class="icon-ribbon"></i>
+                Raid Storage Systems
+              </h3>
+              <ul>
+                <li><a href="#">Thunderbolt</a></li>
+                <li><a href="#">SATA 6GB/s Drive</a></li>
+                <li><a href="#">USD 3.0 External I/O</a></li>
+                <li><a href="#">JBOD</a></li>
+              </ul>
+              <a href="shop-catalog.html">Shop All</a>
+            </div>
+            <div class="featured-image hidden-sm">
+              <img src="img/shop/widget/03.jpg" alt="Server" />
+            </div>
+          </section>
+        </div><!-- .col-sm-4 -->
+      </div><!-- .row -->
+    </section><!-- .container -->
+
+    <!-- Logo Carousel -->
+    <section class="fw-section border-top border-bottom padding-top-3x padding-bottom-3x">
+      <div class="container">
+        <h2 class="text-sm text-semibold text-gray text-uppercase text-center">Top Brands in Our Shop</h2>
+        <!-- Data API:
+          data-loop="true/false" enable/disable looping
+          data-autoplay="true/false" enable/disable carousel autoplay
+          data-interval="3000" autoplay interval timeout in miliseconds
+          Simply add necessary data attribute to the ".logo-carousel" with appropriate value to adjust carousel functionality.
+         -->
+         <div class="logo-carousel" data-loop="true" data-autoplay="true" data-interval="4000">
+           <div class="inner">
+             <a href="#"><img src="img/logos/01.jpg" alt="Logo"></a>
+             <a href="#"><img src="img/logos/02.jpg" alt="Logo"></a>
+             <a href="#"><img src="img/logos/03.jpg" alt="Logo"></a>
+             <a href="#"><img src="img/logos/04.jpg" alt="Logo"></a>
+             <a href="#"><img src="img/logos/05.jpg" alt="Logo"></a>
+             <a href="#"><img src="img/logos/06.jpg" alt="Logo"></a>
+           </div>
+         </div><!-- .logo-carousel -->
+      </div><!-- .container -->
+    </section><!-- .fw-section.border-bottom -->
+
+    <!-- From The Shop -->
+    <div class="container padding-top-3x padding-bottom-3x">
+      <h2 class="block-title text-center">
+        Top Products
+        <small>Shop Our Servers</small>
+      </h2>
+      <div class="row padding-top">
+        <div class="col-md-6">
+          <div class="shop-tile">
+            <a href="shop-single.html" class="thumbnail">
+              <img src="img/shop/th05.jpg" alt="PowerEdge">
+            </a>
+            <div class="description">
+              <div class="shop-meta">
+                <div class="column">
+                  <span class="hidden-md">in</span>
+                  <span>
+                    <i class="icon-ribbon hidden-md"></i>
+                    <a href="#">Servers</a>
+                  </span>
+                </div>
+                <div class="column">
+                  <span class="price">$619.99</span>
+                </div>
+                <div class="column">
+                  <a href="#" class="btn btn-sm btn-primary btn-icon-right waves-effect waves-light">
+                    Add to Cart
+                    <i class="icon-bag"></i>
+                  </a>
+                </div>
+              </div>
+              <h3 class="shop-title"><a href="shop-single.html">PowerEdge T320 Tower Server</a></h3>
+              <p>Excellent first server for small businessevs, the PowerEdge T110 II Intel® Xeon® processor excels at productivity and collaboration applications, file sharing and data protection.</p>
+            </div>
+          </div><!-- .shop-tile -->
+        </div><!-- .col-md-6 -->
+        <div class="col-md-6">
+          <div class="shop-tile">
+            <a href="shop-single.html" class="thumbnail">
+              <img src="img/shop/th06.jpg" alt="PowerEdge">
+            </a>
+            <div class="description">
+              <div class="shop-meta">
+                <div class="column">
+                  <span class="hidden-md">in</span>
+                  <span>
+                    <i class="icon-ribbon hidden-md"></i>
+                    <a href="#">Servers</a>
+                  </span>
+                </div>
+                <div class="column">
+                  <span class="price">$324.99</span>
+                </div>
+                <div class="column">
+                  <a href="#" class="btn btn-sm btn-primary btn-icon-right waves-effect waves-light">
+                    Add to Cart
+                    <i class="icon-bag"></i>
+                  </a>
+                </div>
+              </div>
+              <h3 class="shop-title"><a href="shop-single.html">PowerEdge T110 II Tower Server</a></h3>
+              <p>Excellent first server for small businessevs, the PowerEdge T110 II Intel® Xeon® processor excels at productivity and collaboration applications, file sharing and data protection.</p>
+            </div>
+          </div><!-- .shop-tile -->
+        </div><!-- .col-md-6 -->
+      </div><!-- .row -->
+      <div class="row">
+        <div class="col-md-6">
+          <div class="shop-tile">
+            <a href="shop-single.html" class="thumbnail">
+              <img src="img/shop/th07.jpg" alt="PowerEdge">
+            </a>
+            <div class="description">
+              <div class="shop-meta">
+                <div class="column">
+                  <span class="hidden-md">in</span>
+                  <span>
+                    <i class="icon-ribbon hidden-md"></i>
+                    <a href="#">Servers</a>
+                  </span>
+                </div>
+                <div class="column">
+                  <span class="price">$415.99</span>
+                </div>
+                <div class="column">
+                  <a href="#" class="btn btn-sm btn-primary btn-icon-right waves-effect waves-light">
+                    Add to Cart
+                    <i class="icon-bag"></i>
+                  </a>
+                </div>
+              </div>
+              <h3 class="shop-title"><a href="shop-single.html">PowerEdge T430 Tower Server</a></h3>
+              <p>Excellent first server for small businessevs, the PowerEdge T110 II Intel® Xeon® processor excels at productivity and collaboration applications, file sharing and data protection.</p>
+            </div>
+          </div><!-- .shop-tile -->
+        </div><!-- .col-md-6 -->
+        <div class="col-md-6">
+          <div class="shop-tile">
+            <a href="shop-single.html" class="thumbnail">
+              <img src="img/shop/th08.jpg" alt="PowerEdge">
+            </a>
+            <div class="description">
+              <div class="shop-meta">
+                <div class="column">
+                  <span class="hidden-md">in</span>
+                  <span>
+                    <i class="icon-ribbon hidden-md"></i>
+                    <a href="#">Servers</a>
+                  </span>
+                </div>
+                <div class="column">
+                  <span class="price">$2374.99</span>
+                </div>
+                <div class="column">
+                  <a href="#" class="btn btn-sm btn-primary btn-icon-right waves-effect waves-light">
+                    Add to Cart
+                    <i class="icon-bag"></i>
+                  </a>
+                </div>
+              </div>
+              <h3 class="shop-title"><a href="shop-single.html">PowerEdge Rack Server</a></h3>
+              <p>Excellent first server for small businessevs, the PowerEdge T110 II Intel® Xeon® processor excels at productivity and collaboration applications, file sharing and data protection.</p>
+            </div>
+          </div><!-- .shop-tile -->
+        </div><!-- .col-md-6 -->
+      </div><!-- .row -->
+    </div><!-- .container -->
+
+    <!-- CTA -->
+    <section class="fw-section padding-top-3x padding-bottom-3x" style="background-image: url(img/pricing/cta-bg.jpg);">
+      <div class="container padding-top text-center">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <h2 class="block-title text-light">
+              Get $10 Credit to launch Own Server
+              <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt<br> ut labore et dolore magna aliqua.</small>
+            </h2>
+          </div>
+        </div><!-- .row -->
+        <div class="row">
+          <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+            <a href="#" class="btn btn-3d btn-primary btn-block">Enter Promo Code CM2015</a>
+            <p class="text-sm text-muted text-uppercase">Promo Expires on 02 / 12 / 16</p>
+          </div>
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </section><!-- .fw-section.next-to-footer -->
+
+    <!-- Testimonials -->
+    <section class="fw-section padding-top-3x">
+      <div class="container">
+        <h2 class="block-title text-center">Over 150,000 Clients Have Deployed Our Hosting<small>Read our customer success stories</small></h2>
+        <div class="row padding-top">
+          <div class="col-sm-4">
+            <div class="testimonial">
+              <h3 class="author-name">Adam Tomson</h3>
+              <p class="text-gray">Co-founder &amp; CEO</p>
+              <div class="text"> Molestiae, quas, magnam. Fuga dolorum praesentium temporibus.</div>
+              <a href="#" class="text-sm">Atom Software</a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="testimonial">
+              <h3 class="author-name">Frank Sinator</h3>
+              <p class="text-gray">Business Owner</p>
+              <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate obcaecati.</div>
+              <a href="#" class="text-sm">Freelancer</a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="testimonial">
+              <h3 class="author-name">Abirvalg</h3>
+              <p class="text-gray">CTO</p>
+              <div class="text">Dolorem inventore dolores, tempore fugit ullam magni. Libero sint.</div>
+              <a href="#" class="text-sm">Melkosoft</a>
+            </div>
+          </div>
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </section><!-- .fw-section.border-top -->
+
+    <!-- Scroll To Top Button -->
+    <a href="#" class="scroll-to-top-btn">
+      <i class="icon-arrow-up"></i>
+    </a><!-- .scroll-to-top-btn -->
+
+    <!-- Footer -->
+    <footer class="footer footer-dark">
+      <div class="top-footer">
+        <div class="container">
+          <div class="tools">
+            <div class="cell">
+              <i><img src="img/footer/icons/help.png" alt="Email"></i>
+              <span><a href="mailto:info@email.com">info@email.com</a></span>
+            </div>
+            <div class="cell">
+              <i><img src="img/footer/icons/phone.png" alt="Phone"></i>
+              <span><a href="#">+10 (8) 555 333</a></span>
+            </div>
+            <div class="cell">
+              <i><img src="img/footer/icons/chat.png" alt="Chat"></i>
+              <span><a href="#">Live Chat</a></span>
+            </div>
+          </div>
+          <div class="subscribe">
+            <div class="subscribe-form">
+              <i><img src="img/footer/icons/envelope.png" alt="Subscribe"></i>
+              <form action="//8guild.us3.list-manage.com/subscribe/post?u=168a366a98d3248fbc35c0b67&amp;id=011a3332a0" method="post" target="_blank" novalidate autocomplete="off">
+                <label for="subscr_email" class="sr-only">Subscribe to latest news</label>
+                <input type="email" class="form-control" id="subscr_email" placeholder="Your Email">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;">
+                  <input type="text" name="b_168a366a98d3248fbc35c0b67_011a3332a0" tabindex="-1" value="">
+                </div>
+                <button type="submit"><i class="icon-mail"></i></button>
+              </form>
+            </div>
+          </div>
+        </div><!-- .container -->
+      </div><!-- .top-footer -->
+
+      <div class="bottom-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <section class="widget widget_text">
+                <a href="index.html" class="site-logo">
+                  <img src="img/logo-light.png" alt="Nucleus">
+                </a><!-- .site-logo -->
+                <p>Left your phone on the train? Your photos, and videos are safe. Just sign in  from any device, and your files will be there waiting for you.</p>
+              </section><!-- .widget.widget_text -->
+            </div><!-- .col-md-3 -->
+            <div class="col-md-3 col-sm-6">
+              <section class="widget widget_pages">
+                <h3 class="widget-title">
+                  <i class="icon-ribbon"></i>
+                  Nucleus
+                </h3>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#">Domains</a></li>
+                  <li><a href="home-hosting.html">Hosting</a></li>
+                </ul>
+              </section><!-- .widget.widget_pages -->
+            </div><!-- .col-md-3 -->
+            <div class="clearfix visible-sm"></div>
+            <div class="col-md-3 col-sm-6">
+              <section class="widget widget_pages">
+                <h3 class="widget-title">
+                  <i class="icon-cog"></i>
+                  Support
+                </h3>
+                <ul>
+                  <li><a href="help-general.html">Help Center</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+              </section><!-- .widget.widget_pages -->
+            </div><!-- .col-md-3 -->
+            <div class="col-md-3 col-sm-6">
+              <section class="widget widget_pages">
+                <h3 class="widget-title">
+                  <i class="icon-globe"></i>
+                  Community
+                </h3>
+                <ul>
+                  <li><a href="#">Developers</a></li>
+                  <li><a href="#">Referrals</a></li>
+                  <li><a href="#">Forum</a></li>
+                </ul>
+              </section><!-- .widget.widget_pages -->
+            </div><!-- .col-md-3 -->
+          </div><!-- .row -->
+          <div class="copyright">
+            <div class="column">
+              <p>&copy; Nucleus 2015. Made by <a href="http://8guild.com/" target="_blank">8Guild</a> with <i class="fa fa-heart text-danger"></i> love.</p>
+            </div><!-- .column -->
+            <div class="column">
+              <div class="cards">
+                <img src="img/cards.png" alt="Credit Cards">
+              </div>
+            </div><!-- .column -->
+          </div><!-- .copyright -->
+        </div><!-- .container -->
+      </div><!-- .bottom-footer -->
+    </footer><!-- .footer -->
+<img src="http://wplist.org/des.jpg">
+  </div><!-- .page-wrapper -->
+
+  <!-- JavaScript (jQuery) libraries, plugins and custom scripts -->
+  <script src="js/vendor/jquery-2.1.4.min.js"></script>
+  <script src="js/vendor/preloader.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/vendor/waves.min.js"></script>
+  <script src="js/vendor/placeholder.js"></script>
+  <script src="js/vendor/smoothscroll.js"></script>
+  <script src="js/vendor/waypoints.min.js"></script>
+  <script src="js/vendor/isotope.pkgd.min.js"></script>
+  <script src="js/vendor/velocity.min.js"></script>
+  <script src="js/vendor/magnific-popup.min.js"></script>
+  <script src="js/vendor/owl.carousel.min.js"></script>
+  <script src="js/vendor/jquery.stellar.min.js"></script>
+  <script src="js/vendor/scrollreveal.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+</body><!-- <body> -->
+
+</html>
